@@ -1,0 +1,68 @@
+/* body{
+  background-color: #000000;
+}
+
+.grid{
+  display : grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+}
+
+.box{
+  width : auto;
+  height : 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  font-size: 35px;
+  color : #ffffff
+} */
+
+body{
+  background-color: #D63031;
+  animation-name: backgroundAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundAnimation{
+  0% {
+    background-color: #D63031;
+  }
+  50%{
+    background-color: burlywood;
+  }
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.box{
+  height : 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: brown;
+  color : white
+}
+
+h1{
+  animation-name: text-animation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+@keyframes  text-animation{
+  0% {
+    color : black
+  }
+  60% {
+    color: white;
+  }
+}
